@@ -1,23 +1,20 @@
 # GraphQL
-- Install dependencies:
+## Install dependencies:
 ```
  npm init (create package.json for project folder)
  npm i express express-graphql graphql nodemon
  npm i --save-dev @babel/cli @babel/core @babel/node @babel/preset-env
  
 ```
-
 ## Add persistence:
   - Mongoldb.com
   - Follow the mongodb instructions
   - Install Robo 3T (mongodb connection manager)
   - Create file dbConnectors.js
-  - Install dependencies:
-	`
-	npm i mongoose sequelize sqlite3 casual lodash
-	` 
- ## GraphiQL:
+  - Install dependencies: ```npm i mongoose sequelize sqlite3 casual lodash```
+## GraphiQL:
  
+ ```
  mutation {
   createProduct(input: {
     name: "Widget from GraphiQL",
@@ -39,7 +36,8 @@
 	    }
   }
 }
-
+```
+```
 mutation{
   updateProduct(input: {
     id: "63503390e64c4275d335745a"
@@ -58,11 +56,13 @@ mutation{
     description
   }
 }
-
+```
+```
 mutation{
   deleteProduct(id: "63501d25f45108c7fd908324")
 }
-
+```
+```
 query{
   getProduct(id: "63501d25f45108c7fd908324"){
     	id
@@ -72,7 +72,8 @@ query{
    	  soldout
   }
 }
-
+```
+```
 query{
   getAllProducts{
     name
@@ -80,10 +81,11 @@ query{
     description
   }
 }
+```
 
-- QUERY WITH ALIASES
-  Add labels to query:
-  
+## Query with aliases
+- Add labels to query:
+```
 query{
   
   DescriptionLabel: getProduct(id: "63503390e64c4275d335745a"){
@@ -96,9 +98,10 @@ query{
     description
   }
 }
+```
 
-- QUERY WITH FRAGMENT
-
+## Query with fragment
+```
 query{
   
   Widget_1: getProduct(id: "63503390e64c4275d335745a"){
@@ -116,6 +119,7 @@ fragment widgetFragment on Product{
   description
   soldout
 }
+```
   
 ## Mongodb
 <img width="1268" alt="image" src="https://user-images.githubusercontent.com/45378000/196783089-505b3c1f-35e0-4012-9f77-a392c3b7d373.png">
