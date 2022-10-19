@@ -1,7 +1,7 @@
 # GraphQL
 ## Install dependencies:
 ```
- npm init (create package.json for project folder)
+ npm init
  npm i express express-graphql graphql nodemon
  npm i --save-dev @babel/cli @babel/core @babel/node @babel/preset-env
  
@@ -32,7 +32,7 @@
     	price
     	soldout
 	    stores{
-		    store
+		store
 	    }
   }
 }
@@ -69,7 +69,7 @@ query{
     	name
     	description
     	price
-   	  soldout
+   	soldout
   }
 }
 ```
@@ -100,7 +100,7 @@ query{
 }
 ```
 
-## Query with fragment
+- Query with fragment
 ```
 query{
   
