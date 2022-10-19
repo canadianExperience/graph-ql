@@ -1,16 +1,19 @@
-# GRAPH QL
+# GraphQL
 - Install dependencies:
-  $ npm init (create package.json for project folder)
-  $ npm i express express-graphql graphql nodemon
-  $ npm i --save-dev @babel/cli @babel/core @babel/node @babel/preset-env
+```
+ npm init (create package.json for project folder)
+ npm i express express-graphql graphql nodemon
+ npm i --save-dev @babel/cli @babel/core @babel/node @babel/preset-env
+ 
+```
 
 — Add persistence
-  Mongoldb.com
-  Follow the mongodb instructions
-  Install Robo 3T (mongodb connection manager)
-  Create file dbConnectors.js
-  Install dependencies:
-	$ npm i mongoose sequelize sqlite3 casual lodash
+  - Mongoldb.com
+  - Follow the mongodb instructions
+  - Install Robo 3T (mongodb connection manager)
+  - Create file dbConnectors.js
+  - Install dependencies:
+	`npm i mongoose sequelize sqlite3 casual lodash`
   
  - GraphiQL:
  
