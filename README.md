@@ -31,9 +31,7 @@
     	description
     	price
     	soldout
-	    stores{
-		store
-	    }
+	stores { store }
   }
 }
 ```
