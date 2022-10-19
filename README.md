@@ -7,15 +7,16 @@
  
 ```
 
-— Add persistence
+## Add persistence:
   - Mongoldb.com
   - Follow the mongodb instructions
   - Install Robo 3T (mongodb connection manager)
   - Create file dbConnectors.js
   - Install dependencies:
-	`npm i mongoose sequelize sqlite3 casual lodash`
-  
- - GraphiQL:
+	`
+	npm i mongoose sequelize sqlite3 casual lodash
+	` 
+ ## GraphiQL:
  
  mutation {
   createProduct(input: {
