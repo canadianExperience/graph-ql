@@ -1,7 +1,9 @@
 # GraphQL
 ## Install dependencies:
 ```npm init```
+
 ```npm i express express-graphql graphql nodemon```
+
 ```npm i --save-dev @babel/cli @babel/core @babel/node @babel/preset-env```
  
 ## Add persistence:
@@ -9,7 +11,9 @@
   - Follow the mongodb instructions
   - Install Robo 3T (mongodb connection manager)
   - Create file dbConnectors.js
-  - Install dependencies: ```npm i mongoose sequelize sqlite3 casual lodash```
+  - Install dependencies: 
+  
+  ```npm i mongoose sequelize sqlite3 casual lodash```
 ## GraphiQL:
 ## Mutations
  
